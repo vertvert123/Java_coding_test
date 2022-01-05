@@ -9,7 +9,7 @@ public class Number_6 {
 
 
         for (int B = 1; B < A; B++) {
-            System.out.println(A-B);
+            System.out.println(A - B);
         }
 
         scan.close();
