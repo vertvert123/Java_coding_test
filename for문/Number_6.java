@@ -8,7 +8,7 @@ public class Number_6 {
         int A = scan.nextInt();
 
 
-        for (int B = 1; B < A; B++) {
+        for (int B = 0; B < A; B++) {
             System.out.println(A - B);
         }
 
