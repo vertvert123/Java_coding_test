@@ -8,12 +8,9 @@ public class Number_3 {
         ArrayList<Integer> list_int = new ArrayList<Integer>();
 
 
-        if(A<10){
-            list_int.add(A*10);
-        }
-        else{
-            list_int.add(A);
-        }
+        list_int.add(A);
+
+        
 
         while(true){
             if (list_int.get(0)==list_int.get(list_int.size()-1)){
@@ -31,7 +28,7 @@ public class Number_3 {
         Scanner scan = new Scanner(System.in);
         int A = scan.nextInt();
 
-        chkcount(A);
+        System.out.println(chkcount(A));
         scan.close();
         
         
