@@ -19,14 +19,15 @@ public class Number_1{
             }
         }
 
-        for(int C = 0; C<A; C++){
+        for(int C= 0; C<A; C++){
             if(MIN > B[C]){
-                MAX = B[C];
+                MIN = B[C];
             }
         }
 
 
         System.out.println(MAX);
+        System.out.println(MIN);
         scan.close();
     }
 }
