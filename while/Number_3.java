@@ -1,36 +1,31 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Number_3 {
-
-    public static int chkcount(int A){
-        int Answer;
-        ArrayList<Integer> list_int = new ArrayList<Integer>();
-
-
-        list_int.add(A);
-
-        
-
-        while(true){
-            if (list_int.get(0)==list_int.get(list_int.size()-1)){
-                Answer =list_int.size();
-                break;
-            }
-            else if(list_int.get(list_int.size()-1)>=10){
-                list_int.add((A%10)*10+((A%10)+(A/10)));
-            }
-        }
-        return Answer;
-
-    }
+    
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int A = scan.nextInt();
-
-        System.out.println(chkcount(A));
-        scan.close();
+        int B = 0;
+        int C = 0;
+        int count = 0;
+        if(A <10){
+            C =A*10+A;
+            count++;
+        }
+        else{
+            B = A/10+A%10;
+            C = A%10*10+B%10;
+            count++;
+        }
         
+        while(C!=A){
+            B = C/10+C%10;
+            C = C%10*10+B%10;
+            count ++;
+        }
+        System.out.println(count);
+        scan.close();
         
     }
     
