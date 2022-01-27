@@ -56,5 +56,5 @@ public class Number_3 {
         scan.close();
 
     }
-
+// String을 비교 할땐 == 보단 equals를 쓰자.
 }
