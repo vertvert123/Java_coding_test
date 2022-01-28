@@ -14,7 +14,7 @@ public class Number_5 {
         }
         scan.close();
         Arrays.sort(B);
-       
+        System.out.println(Arrays.toString(B));// 배열 보기좋게 출력하는법
 
 
         for (int i = 0; i < B.length; i++) {
@@ -25,6 +25,7 @@ public class Number_5 {
                 B[i]=B[i]/B[A-1]*100;
             }
         }
+        System.out.println(Arrays.toString(B));
 
         for(int i = 0; i<B.length;i++){
             sum +=B[i];
