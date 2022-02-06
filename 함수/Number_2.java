@@ -1,4 +1,6 @@
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Number_2 {
     static int selfNum(int a){
@@ -13,6 +15,9 @@ public class Number_2 {
     public static void main(String[] args) {
         int[] A = new int [100];
         int[] B = new int [100];
+        List <Integer> C = new ArrayList<>();
+        List <Integer> D = new ArrayList<>();
+        int[] E;
         int count = 1;
         for(int i =0; i<A.length;i++){
             A[i] = i+1;
@@ -22,21 +27,27 @@ public class Number_2 {
             B[count-1] = selfNum(count);
             count++;
         }
-        count = 0;
+        Arrays.sort(B);
+        System.out.println(Arrays.toString(B));
 
-        while(count!=100){
-            for(int i = 0; i<A.length;i++){
-                if(A[count]==B[i]){
-                    count++;
-                    continue;
+        
+        for(int i = 0; i<A.length; i++){
+            for(int j = 0; j<B.length; j++){
+                if(A[i]==B[j]){
+
                 }
                 else{
-                    System.out.println(A[count]);
-                    count++;
-                    
+                    C.add(A[i]);
                 }
             }
+            
         }
+        for(int i : C){
+            if(!D.contains(i)){
+                D.add(i);
+            }
+        }
+       
 
     }
 }
