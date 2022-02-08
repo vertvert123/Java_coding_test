@@ -1,6 +1,8 @@
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 
 public class Number_2 {
     static int selfNum(int a){
@@ -12,16 +14,14 @@ public class Number_2 {
         }
         return value;
     }
+    public static boolean contains(final int[] arr, final int key) {
+        return Arrays.asList(arr).contains(key);
+    }
     public static void main(String[] args) {
-        int[] A = new int [100];
+        List<Integer> A = new ArrayList<>();
         int[] B = new int [100];
-        List <Integer> C = new ArrayList<>();
-        List <Integer> D = new ArrayList<>();
-        int[] E;
         int count = 1;
-        for(int i =0; i<A.length;i++){
-            A[i] = i+1;
-        }
+        
         
         while(selfNum(count)<=100){
             B[count-1] = selfNum(count);
@@ -29,23 +29,22 @@ public class Number_2 {
         }
         Arrays.sort(B);
         System.out.println(Arrays.toString(B));
-
+        count = 0;
         
-        for(int i = 0; i<A.length; i++){
-            for(int j = 0; j<B.length; j++){
-                if(A[i]==B[j]){
-
-                }
-                else{
-                    C.add(A[i]);
-                }
+        
+        while(count<100){
+            boolean opt = contains(B,count+1);
+            if(!opt){
+                A.add(count+1);
+                count++;
+            }
+            else{
+                count++;
             }
             
         }
-        for(int i : C){
-            if(!D.contains(i)){
-                D.add(i);
-            }
+        for(int i = 0; i<A.size();i++){
+            System.out.println(A.get(i));
         }
        
 
