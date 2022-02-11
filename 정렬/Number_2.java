@@ -16,3 +16,4 @@ public class Number_2{
         }
     }
 }
+// 구현은했지만 시간부족으로 실패
