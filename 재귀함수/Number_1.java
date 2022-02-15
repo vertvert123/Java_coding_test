@@ -13,7 +13,7 @@ public class Number_1 {
         if (num <= 1) {
             return 1;
         } else {
-            return function (num - 1) * num;
+            return function(num - 1) * num;
         }
     }
 }
