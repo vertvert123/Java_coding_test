@@ -13,7 +13,7 @@ public class Number_3 {
             else if(count<1000){// 100의자리 10의자리 1의자리 구해서 뺀 값이 같은지 확인해야한다.
                 int B = count%100;
                 int C = count-(B*100);
-                if()
+                
             }
         }
         return count2;
