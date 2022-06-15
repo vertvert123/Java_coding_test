@@ -4,9 +4,6 @@ import java.util.List;
 
 public class Num_4673 {
 
-
-
-
     static int selfNum(int a) {
         String A = Integer.toString(a);
         String B[] = A.split("");
@@ -17,19 +14,14 @@ public class Num_4673 {
         return value;
     }
 
-    static String fd_answer(int a){
-        String A = Integer.toString(a);
-
-        return
-    }
-
     public static void main(String[] args) {
-        List < Integer > A = new ArrayList < > ();
+        List < String > A = new ArrayList < > ();
         int[] B = new int[10000];
         int count = 1;
         int count_2 = 0;
+    
 
-        while (selfNum(count) <= 10000) {
+        while (count <= 10000) {
             B[count - 1] = selfNum(count);
             count++;
         }
@@ -40,19 +32,30 @@ public class Num_4673 {
             }
         }
 
-        String C[] = new String[count_2];
+        int C[] = new int[count_2];
+        String D[] = new String[count_2];
 
-        for(int i=0; i<count_2; i++){
-            C[i] = Integer.toString(B[i]);
+        for (int i = 0; i < count_2; i++) {
+            C[i] = B[i];
         }
 
         Arrays.sort(C);
-        System.out.println(Arrays.toString(C));
-
-        for(int i = 0; i<10000;i++){
-            Arrays.asList(C).contains()
-    }
+        for (int i = 0; i < count_2; i++) {
+            D[i] =Integer.toString(C[i]);
         }
-        
 
+        for(int i = 1; i<10000; i++){
+            String h = Integer.toString(i);
+            String stringToSearch =h;
+            if(Arrays.asList(D).contains(stringToSearch)==false){
+                A.add(h);
+            }
+        }
+
+        for(String i : A){
+            System.out.println(i);
+        }
+
+
+    }
 }
