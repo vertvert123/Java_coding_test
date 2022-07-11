@@ -11,6 +11,10 @@ public class Number_7 {
         System.out.println(a * b);
         scan.close();
 
+        
+
+        
+
 
     }
 }
