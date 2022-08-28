@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "함수",
         "사칙연산",
-        "함수"
+        "문자열"
     ]
 }
