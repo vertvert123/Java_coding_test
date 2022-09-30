@@ -1,0 +1,63 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "DFSBFS_5149c221"
+        },
+        {
+            "type": "java",
+            "name": "Launch Num_1012",
+            "request": "launch",
+            "mainClass": "Num_1012",
+            "projectName": "DFSBFS_5149c221"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "dfs & bfs_7bf37ae3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Num_1012",
+            "request": "launch",
+            "mainClass": "Num_1012",
+            "projectName": "dfs & bfs_7bf37ae3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Num_2468",
+            "request": "launch",
+            "mainClass": "Num_2468",
+            "projectName": "dfs & bfs_7bf37ae3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Num_2468_bfs",
+            "request": "launch",
+            "mainClass": "Num_2468_bfs",
+            "projectName": "dfs & bfs_7bf37ae3"
+        },
+        {
+            "type": "java",
+            "name": "Launch Num_2468_dfs",
+            "request": "launch",
+            "mainClass": "Num_2468_dfs",
+            "projectName": "dfs & bfs_7bf37ae3"
+        }
+    ]
+}
