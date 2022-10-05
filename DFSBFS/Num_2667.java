@@ -14,6 +14,7 @@ public class Num_2667 {
                 if (danji[cx][cy] == 1 && visited[cx][cy] == false) {
                     dfs(cx, cy);
                 }
+                
                 else{
 
                 }
