@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Num_2583",
+            "request": "launch",
+            "mainClass": "Num_2583",
+            "projectName": "DFSBFS_5149c221"
+        },
+        {
+            "type": "java",
+            "name": "Launch Num_2667_BFS",
+            "request": "launch",
+            "mainClass": "Num_2667_BFS",
+            "projectName": "DFSBFS_5149c221"
+        },
+        {
+            "type": "java",
+            "name": "Launch Num_2667",
+            "request": "launch",
+            "mainClass": "Num_2667",
+            "projectName": "DFSBFS_5149c221"
+        },
+        {
+            "type": "java",
+            "name": "Launch Num_24497",
+            "request": "launch",
+            "mainClass": "Num_24497",
+            "projectName": "DFSBFS_5149c221"
+        },
+        {
+            "type": "java",
             "name": "Launch test",
             "request": "launch",
             "mainClass": "test",
